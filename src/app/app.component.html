@@ -1,0 +1,162 @@
+<div class="dbp2" *ngIf="errd.length > 0">
+  <ng-container *ngFor="let i of errd">
+  <span class="dbp3" [class]="'db-'+i.type" >
+  {{ i.msg}}
+</span>
+  </ng-container>
+      
+</div>
+<!-- <div class="dbp" *ngIf="errd != ''">
+    <p>{{errd}}</p>
+</div> -->
+<div>
+  <table>
+    <tr *ngFor="let i of name; let x = index">
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[0]"
+          (keyup)="sub2[x][0].next({ i: i, p: 0 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[1]"
+          (keyup)="sub2[x][1].next({ i: i, p: 1 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[2]"
+          (keyup)="sub2[x][2].next({ i: i, p: 2 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[3]"
+          (keyup)="sub2[x][3].next({ i: i, p: 3 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[4]"
+          (keyup)="sub2[x][4].next({ i: i, p: 4 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[5]"
+          (keyup)="sub2[x][5].next({ i: i, p: 5 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[6]"
+          (keyup)="sub2[x][6].next({ i: i, p: 6 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[7]"
+          (keyup)="sub2[x][7].next({ i: i, p: 7 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[8]"
+          (keyup)="sub2[x][8].next({ i: i, p: 8 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[9]"
+          (keyup)="sub2[x][9].next({ i: i, p: 9 })"
+        />
+      </td>
+    </tr>
+  </table>
+  <hr />
+  <table>
+    <tr *ngFor="let i of name">
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[0]"
+          (keyup)="sub.next({ i: i, p: 0 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[1]"
+          (keyup)="sub.next({ i: i, p: 1 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[2]"
+          (keyup)="sub.next({ i: i, p: 2 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[3]"
+          (keyup)="sub.next({ i: i, p: 3 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[4]"
+          (keyup)="sub.next({ i: i, p: 4 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[5]"
+          (keyup)="sub.next({ i: i, p: 5 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[6]"
+          (keyup)="sub.next({ i: i, p: 6 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[7]"
+          (keyup)="sub.next({ i: i, p: 7 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[8]"
+          (keyup)="sub.next({ i: i, p: 8 })"
+        />
+      </td>
+      <td>
+        <input
+          type="text"
+          [(ngModel)]="i[9]"
+          (keyup)="sub.next({ i: i, p: 9 })"
+        />
+      </td>
+    </tr>
+  </table>
+</div>
