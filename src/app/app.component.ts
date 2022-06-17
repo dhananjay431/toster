@@ -42,8 +42,15 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.err
       .pipe(
+        tap(d => {
+          if(that.errd.includes(d) == true){
+             throw new Error("sdfasfsdf")
+          }
+        }),
         tap((d) => {
+
           that.errd.push(d);
+          
         }),
         delay(5000),
         tap((d) => {
