@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit, VERSION } from '@angular/core';
 import { Subject } from 'rxjs';
 
-import { tap, debounceTime, delay } from 'rxjs/operators';
+import { tap, debounceTime, delay, takeLast } from 'rxjs/operators';
 
 @Component({
   selector: 'my-app',
