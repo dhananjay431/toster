@@ -50,9 +50,7 @@ export class AppComponent implements OnInit, OnDestroy {
           that.errd.shift();
         })
       )
-      .subscribe((d) => {
-        document.getElementsByClassName('dbp');
-      });
+      .subscribe();
     console.log(this.sub2);
     for (let i = 0; i < 10; i++)
       for (let j = 0; j < 10; j++) {
