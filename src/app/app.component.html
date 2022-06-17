@@ -1,10 +1,9 @@
 <div class="dbp2" *ngIf="errd.length > 0">
   <ng-container *ngFor="let i of errd">
-  <span class="dbp3 db-type" [class]="'db-'+i.type" >
-  {{ i.msg}}
-</span>
+    <span class="dbp3 db-type" [class]="'db-' + i.type">
+      {{ i.msg }}
+    </span>
   </ng-container>
-      
 </div>
 <!-- <div class="dbp" *ngIf="errd != ''">
     <p>{{errd}}</p>
