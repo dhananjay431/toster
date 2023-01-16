@@ -9,12 +9,11 @@
     "email": {
       "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
     },
-    "dob": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
+    "dob":   { "dateTime": {
+      "min": "2010-01-01T00:00:00Z",
+      "max": "2020-12-31T23:59:59Z"
+    }
+  },
     "avatar": {
       "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
     },
@@ -31,27 +30,6 @@
       "loremWords": {
         "minLength": 5,
         "maxLength": 20
-      }
-    },
-    "address": {
-      "street": {
-        "regexp": "[A-Z][a-z]{5,10}"
-      },
-      "suite": {
-        "regexp": "[A-Z][a-z]{5,10}"
-      },
-      "city": {
-        "regexp": "[A-Z][a-z]{5,10}"
-      },
-      "geo": {
-        "lat": {
-          "min": -90,
-          "max": 90
-        },
-        "lng": {
-          "min": -180,
-          "max": 180
-        }
       }
     }
   }
