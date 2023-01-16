@@ -1,10 +1,8 @@
-{ "Post": {
-    "_": { "items":{
+{ 
+  "User": { "_": { "items":{
         "minLength": 1,
         "maxLength": 100
-      } }
-  },
-  "User": {
+      } },
     "name": {
       "regexp": "[A-Z][a-z]{5,10}"
     },
